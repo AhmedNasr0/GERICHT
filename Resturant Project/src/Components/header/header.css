@@ -1,0 +1,102 @@
+.header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 30px;
+    background-color: var(--color-black);
+    padding: 4rem 6rem;
+    gap: 50px;
+    min-height: 100vh;
+}
+.header_Info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    align-items: flex-start;
+}
+.header_Info_h1{
+    font-size: 95px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 0.04em;
+    line-height: 117px;
+    font-family: var(--font-base);
+    color: var(--color-golden);
+}
+.header_Info p{
+    font-family: var(--font-alt);
+  color: var(--color-white);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 16px;
+}
+.header_Info button{
+    background-color: var(--color-crimson);
+    color: var(--color-black);
+    font-family: var(--font-base);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.header_Info button:hover{
+    color: var(--color-black);
+    background-color: var(--color-grey);
+}
+.header_img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+.header_img img{
+    width: 70%;
+}
+
+@media screen and (min-width: 2000px) {
+    .header_Info_h1 {
+        font-size: 180px;
+        line-height: 210px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .header_Info_h1 {
+        font-size: 90px;
+    }
+    .header_wrapper{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .header_Info_h1 {
+        font-size: 70px;
+        line-height: 87px;
+    }
+    .header_wrapper{
+        padding: 1rem;
+        flex-direction: column;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header_Info_h1{
+        font-size: 50px;
+        line-height: 70px;
+    }
+}
