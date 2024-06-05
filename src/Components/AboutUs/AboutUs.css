@@ -1,0 +1,54 @@
+.Aboutus_wrapper{
+    position: relative;
+}
+.Aboutus_Overlay{
+        position: absolute;
+}
+.Aboutus_Overlay img {
+    width: 391px;
+    height: 415px;
+    z-index: 0;
+}
+.Aboutus_wrapper{
+    width: 100%;
+    z-index: 2;
+}
+.aboutus_Content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    gap: 10px;
+}
+.history_Content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+.Aboutus_knife{
+    margin: 2rem 4rem;
+}
+.Aboutus_knife img{
+    height: 900px;
+}
+
+@media screen and (max-width: 900px) {
+    .Aboutus_wrapper {
+        flex-direction: column;
+    }
+
+    .Aboutus_knife {
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Aboutus_Overlay img {
+        width: 80%;
+        height: 320px;
+    }
+}
